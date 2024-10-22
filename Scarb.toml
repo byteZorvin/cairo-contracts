@@ -1,18 +1,18 @@
 [workspace]
 members = [
-    "packages/access",
-    "packages/account",
-    "packages/finance",
-    "packages/governance",
-    "packages/introspection",
-    "packages/merkle_tree",
-    "packages/presets",
-    "packages/security",
-    "packages/token",
-    "packages/upgrades",
-    "packages/utils",
-    "packages/testing",
-    "packages/test_common",
+  "packages/access",
+  "packages/account",
+  "packages/finance",
+  "packages/governance",
+  "packages/introspection",
+  "packages/merkle_tree",
+  "packages/presets",
+  "packages/security",
+  "packages/token",
+  "packages/upgrades",
+  "packages/utils",
+  "packages/testing",
+  "packages/test_common",
 ]
 
 [package]
@@ -31,13 +31,7 @@ description = "OpenZeppelin Contracts written in Cairo for Starknet, a decentral
 documentation = "https://docs.openzeppelin.com/contracts-cairo"
 repository = "https://github.com/OpenZeppelin/cairo-contracts"
 license-file = "LICENSE"
-keywords = [
-    "openzeppelin",
-    "starknet",
-    "contracts",
-    "security",
-    "standards"
-]
+keywords = ["openzeppelin", "starknet", "contracts", "security", "standards"]
 
 [workspace.dependencies]
 assert_macros = "2.8.4"
@@ -59,7 +53,7 @@ openzeppelin_upgrades = { path = "packages/upgrades" }
 openzeppelin_utils = { path = "packages/utils" }
 
 [dev-dependencies]
-snforge_std.workspace = true
+snforge_std = "0.32.0"
 openzeppelin_test_common = { path = "packages/test_common" }
 openzeppelin_testing = { path = "packages/testing" }
 
@@ -79,4 +73,4 @@ fmt.workspace = true
 [profile.dev.cairo]
 unstable-add-statements-functions-debug-info = true
 unstable-add-statements-code-locations-debug-info = true
-inlining-strategy= "avoid"
+inlining-strategy = "avoid"
